@@ -11,3 +11,21 @@ body{
     font-family: 'Noto Sans Display', sans-serif;
 
 }
+.clearfix {
+    content:'';
+    display: table;
+    clear: both;
+}
+
+/* riga*/
+.product-row {
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.product-row .product.container {
+    position: relative;
+    float: left;
+    width: 30%;
+}
