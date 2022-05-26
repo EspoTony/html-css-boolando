@@ -17,15 +17,84 @@ body{
     clear: both;
 }
 
-/* riga*/
-.product-row {
+/* riga */
+.product-row{
     width: 100%;
     margin-bottom: 30px;
     overflow: hidden;
 }
-
-.product-row .product.container {
+.product-row .product-container{
     position: relative;
-    float: left;
-    width: 30%;
+    float:left;
+    width: 32.5%;
 }
+.product-row .product-container:nth-child(2){
+    margin: 0 1.25%;
+}
+.product-row > .product-container > .product-favorite{
+    position: absolute;
+    background-color: white;
+    font-size: 1.3em;
+    padding: 10px;
+    top: 15px;
+    right: 0;
+}
+
+.product-row > .product-container > .clearfix > span{
+    padding: 4px 7px;
+    margin-right: 3px;
+}
+.product-row > .product-container > .clearfix 
+{
+	position: absolute;
+	color: white;
+	font-size: 0.8em;
+	font-weight: bold;
+    bottom:90px;
+    left:0;
+}
+
+.product-row > .product-container > .clearfix > .product-sale-value{
+    background-color: #ef254d;
+    float:left
+}
+
+.product-row > .product-container > .clearfix > .product-sostenibility{
+    background-color: #00875a;
+    float:left
+}
+
+/* descrione prodotto */
+.product-row .product-container img{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.product-row .product-container .brand,
+.product-row .product-container .nome-prodotto{
+    display: block;
+}
+.product-row .product-container .brand{
+    text-transform: capitalize;
+    font-size: 0.9em;
+}
+.product-row .product-container .nome-prodotto{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+.product-row .product-container .prezzo-scontato,
+.product-row .product-container .prezzo-non-scontato{
+    display: inline-block;
+    font-size: 0.8em;
+    vertical-align: top;
+}
+.product-row .product-container .prezzo-scontato{
+    font-weight: bold;
+    color:#ff2222;
+}
+.product-row .product-container .prezzo-non-scontato{
+    text-decoration: line-through;
+}
+/* FINE sdescrizione prodotto */
+/*FINE riga */
