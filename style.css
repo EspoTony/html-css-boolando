@@ -15,7 +15,7 @@ body{
     content:'';
     display: table;
     clear: both;
-}
+}   
 
 /* riga */
 .product-row{
@@ -38,6 +38,10 @@ body{
     padding: 10px;
     top: 15px;
     right: 0;
+}
+
+.product-row > .product-container > .product-favorite:hover {
+    color: red;
 }
 
 .product-row > .product-container > .clearfix > span{
